@@ -16,18 +16,17 @@ workers: "bench,basic,basic-act"
 tests:
   namespaceName: benchtest
   namespaceRetention: "1"
-  frontendAddress: temporaltest-frontend:7233
-  prometheusURL: "http://prometheus-server"
+  frontendAddress: temporal-testing-frontend:7233
+  # prometheusURL: "http://prometheus-server"
   numDecisionPollers: 50
   skipNamespaceCreation: false
-  caCertFile: ""
-  clientCertFile: ""
-  clientCertPrivateKeyFile: ""
-
+  # caCertFile: ""
+  # clientCertFile: ""
+  # clientCertPrivateKeyFile: ""
   # base-64 equivalents of the above
-  caCertData: ""
-  clientCertData: ""
-  clientCertPrivateKeyData: ""
+  # caCertData: ""
+  # clientCertData: ""
+  # clientCertPrivateKeyData: ""
 
   enableHostVerification: false
 
